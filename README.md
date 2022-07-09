@@ -1,39 +1,48 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+👉 **_show_image_**: A simple flutter package used to show any kind of image(asset, file, network) without passing image type.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+### Latest Version: 
+```
+show_image: 0.0.1
+```
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ⭐ Features
 
-## Features
+#### 1. Automatically recognize which type of image and show it. Only have to pass the image path. See the below example.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+#### 2. Customize image with cover, filled and more.
 
-## Getting started
+#### 3. Click the image to open in full-screen. Having the option to restrict open in large screen on click.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+#### 4. Having the option to set customized border radius, background color(with light and dark mode), width and height of the image.
+
+#### 🎗️ Keep in mind: if `bgColor` and `isLightMode` both given, `bgColor` only applicable.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+/// With network Image
+const SizedBox(
+    height: 300,
+    width: 300,
+    child: ShowImage(imagePath: 'https://img.icons8.com/fluency/344/filled-like.png'),
+    ),
+
+/// With asset Image
+const SizedBox(
+    height: 300,
+    width: 300,
+    child: ShowImage(imagePath: 'assets/images/gps.png'),
+    ),
+
+/// With file Image
+const SizedBox(
+    height: 300,
+    width: 300,
+    child: ShowImage(imagePath: '/data/user/0/com.example.show_image_tester/cache/image_picker4569168379202702965.jpg'),
+    ),
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+### Pull Requests are welcome

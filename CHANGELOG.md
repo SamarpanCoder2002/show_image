@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* First Release: Recognize and show image automatically and customization added.
